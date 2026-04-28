@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G-Ball N Sips</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      /* Fixed the background shorthand */
+      background: #FDF5E6 url("bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #4A2C24 url("choco_animations.gif") no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #5D3A2F;
+      text-align: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000; /* Ensures nav stays above content */
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.8); /* Added slight transparency to read text better over bg.jpg */
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .card {
+      display: inline-block;
+      width: 200px;
+      margin: 15px;
+      padding: 15px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      vertical-align: top;
+    }
+    
+    .card:hover { transform: translateY(-5px); }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .about-highlight {
+      background: #fffdf0;
+      border-left: 6px solid #875342;
+      padding: 20px;
+      border-radius: 0 10px 10px 0;
+    }
+
+    form { background: white; padding: 20px; border-radius: 10px; border: 1px solid #ddd; }
+    input, textarea { width: 90%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 5px; }
+    
+    button {
+      padding: 12px 30px;
+      background: #875342;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover { background: #5d3a2f; }
+
+    footer { background: #4A2C24; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>G-Ball N Sips</h1>
+  <p>Fresh Homemade Graham Balls</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>Affordable and delicious graham balls made fresh every day!</p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about-highlight">
+    <p>Welcome to <b>G-Ball N Sips</b>! We are a small local business passionate about creating affordable and delicious treats for everyone.</p>
+    <p>We started with a simple idea: to offer tasty snacks that students and families can enjoy without spending too much. Pair your favorite graham balls with our refreshing drinks!</p>
+  </div>
+</section>
+
+<section id="products">
+  <h2>Our Menu</h2>
+  <h3>Graham Balls</h3>
+  <div class="card"><img src="plain_graham.jpg" alt="Plain"><p><b>Plain</b><br>₱5</p></div>
+  <div class="card"><img src="sprinkled_graham.jpg" alt="Sprinkle"><p><b>Sprinkle</b><br>₱5</p></div>
+  <div class="card"><img src="milky_graham.jpg" alt="Milky"><p><b>Milky</b><br>₱6</p></div>
+  <div class="card"><img src="premium_graham.jpg" alt="Premium"><p><b>Premium</b><br>₱10</p></div>
+  
+  <h3>Drinks</h3>
+  <div class="card"><img src="ice_coffee.jpg" alt="Coffee"><p><b>Ice Coffee</b><br>₱30</p></div>
+  <div class="card"><img src="milktea.png" alt="Milktea"><p><b>Milktea</b><br>₱28</p></div>
+  <div class="card"><img src="Raspberry_Lemonade.jpg" alt="Spritzers"><p><b>Special Raspberry Lemonade Spritzer</b><br>₱35</p></div>
+  <div class="card"><img src="slurpee.jpg" alt="Slurpee"><p><b>Slurpee</b><br>₱20</p></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 0997 332 6377</p>
+  <form>
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="email" placeholder="Your Email" required><br>
+    <textarea rows="4" placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 G-Ball N Sips | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

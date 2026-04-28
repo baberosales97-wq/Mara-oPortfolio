@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maraño Portfolio</title>
+    <style>
+        body {
+            background: #562135 url("port_assets/sakura_bg.jpg") no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        /* Dark overlay to make text readable */
+        .main-container {
+            background: rgba(0, 0, 0, 0.5);
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #ffb7c5;
+            object-fit: cover;
+        }
+
+        .bio {
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        /* Projects Section */
+        .section-title {
+            margin-top: 50px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-bottom: 2px solid #ffb7c5;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .projects-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            width: 250px;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: white;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .project-card p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact-links {
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+
+        .contact-links a {
+            color: #ffb7c5;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <center>
+            <img src="port_assets/me.jpg" alt="Alexababe Maraño" class="profile-img"> 
+            <h1 style="margin-bottom: 5px;">ALEXABABE MARAÑO</h1>
+            <p style="letter-spacing: 2px; color: #ffb7c5;">ACT-A1 STUDENT</p>
+            
+            <p class="bio">
+                I am a person with diverse interests and passions. I love baking, which allows me to express my creativity and patience. 
+                I am also passionate about computers and technology, constantly learning new skills to improve myself. 
+                Aside from that, I enjoy adventures and exploring new places, which teaches me to be brave and adaptable in life.
+            </p>
+
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                
+                <a href="business.html" class="project-card">
+                    <img src="port_assets/bow.png" alt="Project 2">
+                    <p>Business Website Prototype</p>
+                </a>
+
+                <a href="excels/grading_systemcomputerised.xlsx" class="project-card">
+                    <img src="port_assets/bow.png" alt="Project 3">
+                    <p>Spreadsheet-Based Management System</p>
+                </a>
+
+                <a href="excels/socialmediacontent.xlsx" class="project-card">
+                    <img src="port_assets/bow.png" alt="Project 4">
+                    <p>Social Media Content Plan</p>
+                </a>
+
+		<a href="excels/Platform-Comparison-Presentation.pptx" class="project-card">
+                    <img src="port_assets/bow.png" alt="Project 5">
+                    <p>Presentation + Demo Project (Platform Comparison)</p>
+                </a>
+
+		<a href="project3.html" class="project-card">
+                    <img src="port_assets/bow.png" alt="Project 6">
+                    <p>Digital Resume with QR Code</p>
+                </a>
+
+
+
+            </div>
+
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="contact-links">
+                <a href="https://www.facebook.com/profile.php?id=61576825490321" target="_blank">Facebook</a> |
+            </div>
+
+            <footer>
+                <p>&copy; 2026 Maraño Portfolio. All rights reserved.</p>
+            </footer>
+        </center>
+    </div>
+
+</body>
+</html>
